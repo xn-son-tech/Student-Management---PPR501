@@ -1,0 +1,98 @@
+############################
+# General
+############################
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+*.old
+
+############################
+# Visual Studio
+############################
+.vs/
+*.user
+*.userosscache
+*.suo
+*.cache
+*.docstates
+*.dbmdl
+*.jfm
+*.pfx
+*.publishsettings
+
+# Build results
+[Bb]in/
+[Oo]bj/
+x64/
+x86/
+[Aa]rm/
+[Aa]rm64/
+[Ll]og/
+
+############################
+# Visual Studio Code
+############################
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+############################
+# Node / React
+############################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Production build
+build/
+dist/
+
+# Env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+############################
+# Python
+############################
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Pytest / coverage
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+############################
+# Jupyter / IPython
+############################
+.ipynb_checkpoints/
+
+############################
+# Misc
+############################
+.idea/
