@@ -1,31 +1,19 @@
 # backend/app/models/student.py
 from typing import Optional, Dict
+from pydantic import BaseModel
 
 
-class StudentModel:
-    def __init__(
-        self,
-        student_id: str,
-        first_name: Optional[str] = None,
-        last_name: Optional[str] = None,
-        email: Optional[str] = None,
-        dob: Optional[str] = None,
-        hometown: Optional[str] = None,
-        math_score: Optional[float] = None,
-        literature_score: Optional[float] = None,
-        english_score: Optional[float] = None,
-    ):
-        self.student_id = student_id
-        self.first_name = first_name
-        self.last_name = last_name
-        self.email = email
-        self.dob = dob
-        self.hometown = hometown
-        self.math_score = math_score
-        self.literature_score = literature_score
-        self.english_score = english_score
-
-    @staticmethod
+class StudentModel(BaseModel):
+    student_id: str
+    first_name: Optional[str] = None
+    last_name: Optional[str] = None
+    email: Optional[str] = None
+    dob: Optional[str] = None
+    hometown: Optional[str] = None
+    math_score: Optional[float] = None
+    literature_score: Optional[float] = None
+    english_score: Optional[float] = None
+    
     def from_dict(data: Dict):
         return StudentModel(
             student_id=data.get("student_id"),

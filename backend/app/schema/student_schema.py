@@ -23,5 +23,5 @@ class StudentUpdate(BaseModel):
     english_score: Optional[float] = None
 
 
-class StudentResponse(StudentCreate):
+class StudentResponse(CreateStudent):
     pass
